@@ -1,0 +1,14 @@
+{
+  "name": "speka-design-inspector",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node generate-icons.js && vite build"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.32",
+    "vite": "^6.3.5"
+  }
+}

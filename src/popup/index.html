@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F7F7F5" />
+    <title>Prism</title>
+  </head>
+  <body>
+    <main class="popup">
+      <header class="topbar">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 22 22" width="22" height="22" fill="none">
+            <path d="M11 1.8 20 19H2L11 1.8Z" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" />
+            <path d="M1.5 10.1h8.1m.1 0 9.2-5m-9.2 5 9.2 5" stroke="var(--accent)" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <span class="brand-name">Prism</span>
+        <span class="scan-indicator is-scanning" id="scan-indicator" aria-label="Идёт сканирование"></span>
+        <span class="page-host" id="page-host" aria-label="Активный сайт">—</span>
+      </header>
+
+      <div class="content" id="content" aria-live="polite">
+        <section class="section" aria-labelledby="colors-title">
+          <div class="section-heading">
+            <h2 id="colors-title">Палитра цветов</h2>
+            <span class="count" id="color-count">0</span>
+          </div>
+          <div class="color-grid" id="colors"></div>
+        </section>
+
+        <section class="section" aria-labelledby="type-title">
+          <div class="section-heading">
+            <h2 id="type-title">Типографика</h2>
+            <span class="count" id="type-count">0</span>
+          </div>
+          <div class="type-list" id="typography"></div>
+        </section>
+
+        <section class="section" aria-labelledby="vector-title">
+          <div class="section-heading">
+            <h2 id="vector-title">Вектор и логотипы</h2>
+            <span class="count" id="logo-count">0</span>
+          </div>
+          <div class="logo-grid" id="logos"></div>
+        </section>
+      </div>
+
+      <footer class="actions">
+        <button class="export-button" id="export-css" type="button">
+          Копировать CSS-переменные
+        </button>
+      </footer>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
